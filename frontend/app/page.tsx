@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SocketPrices from "./components/SocketPrices"; // ← Import the new component
 
 export default function Home() {
   return (
@@ -48,7 +49,13 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+
+        {/* --- Insert our SocketPrices component here --- */}
+        <SocketPrices />
+        {/* --- End SocketPrices component --- */}
+
       </main>
+
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
